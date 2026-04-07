@@ -15,7 +15,7 @@ document.getElementById("playBtn").addEventListener("click", function(){
   let range =3;
   for(let i=0; i < radios.length; i++) {
     if(radios[i].checked){
-        range=parseint(radios[i].value);
+        range=parseInt(radios[i].value);
     }
   }
 //round setup
