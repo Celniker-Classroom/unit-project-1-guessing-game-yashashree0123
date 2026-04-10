@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  text-align: center;
+  padding: 20px;
+}
+ 
+h1 {
+  color: #333;
+}
+ 
+#date {
+  color: #555;
+  margin-bottom: 10px;
+}
+ 
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+ 
+button {
+  background-color: #4f8ef7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+ 
+button:hover:not(:disabled) {
+  background-color: #2e6de0;
+}
+ 
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+ 
+#giveUpBtn {
+  background-color: #e05252;
+}
+ 
+#giveUpBtn:hover:not(:disabled) {
+  background-color: #c03535;
+}
+ 
+#guess {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 120px;
+}
+ 
+#msg {
+  color: #333;
+}
+ 
+#wins, #avgScore, #fastest, #avgTime {
+  color: #4f8ef7;
+  font-weight: bold;
+}
+ 
+ol {
+  text-align: left;
+  display: inline-block;
+}
+ 
+li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+ 
+label {
+  margin-right: 15px;
+  font-size: 15px;
+}
+ 
+#streakDisplay {
+  color: #e05252;
+  font-weight: bold;
+  margin-top: 5px;
+}

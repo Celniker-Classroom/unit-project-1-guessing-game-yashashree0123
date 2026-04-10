@@ -2,34 +2,47 @@
 <html>
   <head>
     <title>JavaScript Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
   </head>
   <body>
+ 
+    <h1>🎯 Number Guessing Game</h1>
     <p id="date"></p>
-
-    <h3>Level</h3>
-    <input type="radio" name="level" id="e" value="3" checked><label for="e">Easy</label>
-    <input type="radio" name="level" id="m" value="10"><label for="m">Medium</label>
-    <input type="radio" name="level" id="h" value="100"><label for="h">Hard</label>
-
-    <button id="playBtn">Play</button>
-
-    <h3 id="msg">Select a Level</h3>
-    <input type="text" id="guess">
-    <button id="guessBtn" disabled>Guess</button>
-    <button id="giveUpBtn" disabled>Give Up</button>
-
-    <h3>Stats</h3>
-    <p id="wins">Total wins: 0</p>
-    <p id="avgScore">Average Score: </p>
-    <p id="fastest">Fastest Game: </p>
-    <p id="avgTime">Average Time: </p>
-
-    <h3>Leaderboard</h3>
-    <ol>
-      <li name="leaderboard">100</li>
-      <li name="leaderboard">100</li>
-      <li name="leaderboard">100</li>
-    </ol>
+ 
+    <div class="card">
+      <h3>Level</h3>
+      <input type="radio" name="level" id="e" value="3" checked><label for="e">Easy (1-3)</label>
+      <input type="radio" name="level" id="m" value="10"><label for="m">Medium (1-10)</label>
+      <input type="radio" name="level" id="h" value="100"><label for="h">Hard (1-100)</label>
+      <br><br>
+      <button id="playBtn">Play</button>
+    </div>
+ 
+    <div class="card">
+      <h3 id="msg">Select a Level</h3>
+      <input type="text" id="guess" placeholder="Enter guess">
+      <button id="guessBtn" disabled>Guess</button>
+      <button id="giveUpBtn" disabled>Give Up</button>
+      <p id="streakDisplay"></p>
+    </div>
+ 
+    <div class="card">
+      <h3>Stats</h3>
+      <p id="wins">Total wins: 0</p>
+      <p id="avgScore">Average Score: </p>
+      <p id="fastest">Fastest Game: </p>
+      <p id="avgTime">Average Time: </p>
+    </div>
+ 
+    <div class="card">
+      <h3>🏆 Leaderboard</h3>
+      <ol>
+        <li name="leaderboard">--</li>
+        <li name="leaderboard">--</li>
+        <li name="leaderboard">--</li>
+      </ol>
+    </div>
+ 
   </body>
 </html>
